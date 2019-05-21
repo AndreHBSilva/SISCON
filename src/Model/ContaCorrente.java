@@ -7,10 +7,15 @@ package Model;
 
 /**
  *
- * @author Aluno
+ * @author André Hugo
  */
 public class ContaCorrente extends Banco{
     private double limite;
+    
+    public ContaCorrente(String nome, String agencia, int numero, double limite){
+        super(nome, agencia, numero);
+        this.setLimite(limite);
+    }
 
     public double getLimite() {
         return limite;

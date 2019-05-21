@@ -7,9 +7,13 @@ package Model;
 
 /**
  *
- * @author Aluno
+ * @author André Hugo
  */
 public class Carteira extends Conta {
+    
+    public Carteira(String nome){
+        super(nome);
+    }
     
     @Override
     public boolean sacar(double valor){

@@ -7,10 +7,19 @@ package Model;
 
 /**
  *
- * @author Aluno
+ * @author André Hugo
  */
 public class Poupanca extends Banco{
     private int aniversario;
+    
+    public Poupanca(String nome, String agencia, int numero){
+        super(nome, agencia, numero);
+    }
+    
+    public Poupanca(String nome, String agencia, int numero, int aniversario){
+        super(nome, agencia, numero);
+        this.setAniversario(aniversario);
+    }
     
     public double rendimento(double taxa){
         return taxa*saldo/100 + saldo;

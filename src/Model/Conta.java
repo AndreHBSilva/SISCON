@@ -7,7 +7,7 @@ package Model;
 
 /**
  *
- * @author Aluno
+ * @author André Hugo
  */
 public abstract class Conta {
     private String nome;

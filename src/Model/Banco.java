@@ -7,11 +7,17 @@ package Model;
 
 /**
  *
- * @author Aluno
+ * @author André Hugo
  */
 public abstract class Banco extends Conta{
     private String agencia;
     private int numero;
+    
+    public Banco(String nome, String agencia, int numero){
+        super(nome);
+        this.setAgencia(agencia);
+        this.setNumero(numero);
+    }
 
     public String getAgencia() {
         return agencia;

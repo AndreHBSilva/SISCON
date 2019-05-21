@@ -13,8 +13,8 @@ import Model.*;
  */
 public class Main {
     public static void main(String[] args){
-        ContaCorrente cc = new ContaCorrente();
+        ContaCorrente cc = new ContaCorrente("andré hugo","45678-9",2345,455.56);
         cc.setNumero(1554);
-        System.out.println(cc.getNumero());
+        System.out.println(cc.getAgencia()+"\n"+cc.getLimite()+"\n"+cc.getNome());
     }
 }
